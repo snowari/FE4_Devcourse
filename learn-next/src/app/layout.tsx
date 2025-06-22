@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./styles/globals.css";
+import "./styles/style.css";
+import "./styles/circular-bar.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +26,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;500&family=Noto+Sans+KR:wght@400;700&family=Oxygen:wght@400;700&family=Sanchez&family=Sedgwick+Ave+Display&display=optional"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=optional"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
